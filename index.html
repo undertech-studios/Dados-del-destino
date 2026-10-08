@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D20 — Dado del Destino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <main class="container">
+
+    <header class="header">
+      <div class="title-glyph">⬡</div>
+      <h1 class="title">DADO <span class="title-accent">D20</span></h1>
+      <p class="subtitle">// GENERADOR DE DESTINO //</p>
+    </header>
+
+    <section class="dice-zone">
+      <div class="dice-ring ring-outer"></div>
+      <div class="dice-ring ring-inner"></div>
+      <div class="dice-face" id="diceFace">
+        <div class="dice-number" id="diceNumber">?</div>
+        <div class="dice-label" id="diceLabel">LANZA EL DADO</div>
+      </div>
+    </section>
+
+    <button class="roll-btn" id="rollBtn" onclick="rollDice()">
+      <span class="btn-text">⬡ LANZAR</span>
+      <span class="btn-glow"></span>
+    </button>
+
+    <section class="history-section">
+      <div class="history-header">
+        <span class="history-title">ÚLTIMOS RESULTADOS</span>
+        <span class="history-divider">────────────────</span>
+      </div>
+      <div class="history-list" id="historyList">
+        <span class="history-empty">Sin tiradas aún...</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
